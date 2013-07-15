@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>Examples</category>
+  <title>ProstateMorphology</title>
+  <description>A CLI for morphological analysis of a patient-specific 3D prostate model.</description>
+  <version>0.0.1</version>
+  <documentation-url>http://www.slicer.org/slicerWiki/index.php/Documentation/4.2/Modules/ProstateMorphology</documentation-url>
+  <license>Slicer</license>
+  <contributor>Junichi Tokuda</contributor>
+  <acknowledgements>This work was partially funded by NIH grant 3P41RR013218-12S1</acknowledgements>
+  <parameters>
+    <label>IO</label>
+    <description>Label maps for the regions</description>
+    <double>
+      <name>sigma</name>
+      <longflag>sigma</longflag>
+      <flag>s</flag>
+      <label>Sigma</label>
+      <description><![CDATA[Sigma value in physical units (e.g., mm) of the Gaussian kernel]]></description>
+      <default>1.0</default>
+    </double>
+    <image>
+      <name>inputVolume</name>
+      <label>Input Volume</label>
+      <channel>input</channel>
+      <index>0</index>
+      <description><![CDATA[Input volume]]></description>
+    </image>
+    <image type="label">
+      <name>TG</name>
+      <label>Total Grand</label>
+      <channel>input</channel>
+      <index>1</index>
+      <description>Label map for the total grand</description>
+    </image>
+    <image type="label">
+      <name>NVB</name>
+      <label>Neurovascular Bundle</label>
+      <channel>input</channel>
+      <index>2</index>
+      <description>Label map for the neurovascular bundle</description>
+    </image>
+    <image type="label">
+      <name>EUS</name>
+      <label>External Urethrl Sphincter</label>
+      <channel>input</channel>
+      <index>3</index>
+      <description>Label map for the external urethral sphincter</description>
+    </image>
+    <image type="label">
+      <name>Tumor</name>
+      <label>Tumor</label>
+      <channel>input</channel>
+      <index>4</index>
+      <description>Label map for tumor(s)</description>
+    </image>
+    <image>
+      <name>outputVolume</name>
+      <label>Output Volume</label>
+      <channel>output</channel>
+      <index>5</index>
+      <description><![CDATA[Blurred Volume]]></description>
+    </image>
+  </parameters>
+</executable>
