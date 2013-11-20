@@ -48,17 +48,24 @@
       <description>Label map for the external urethral sphincter</description>
     </image>
     <image type="label">
+      <name>SV</name>
+      <label>Seminal Vesicles</label>
+      <channel>input</channel>
+      <index>4</index>
+      <description>Label map for the seminal vesicles</description>
+    </image>
+    <image type="label">
       <name>Tumor</name>
       <label>Tumor</label>
       <channel>input</channel>
-      <index>4</index>
+      <index>5</index>
       <description>Label map for tumor(s)</description>
     </image>
     <image>
       <name>outputVolume</name>
       <label>Output Volume</label>
       <channel>output</channel>
-      <index>5</index>
+      <index>6</index>
       <description><![CDATA[Blurred Volume]]></description>
     </image>
   </parameters>
