@@ -225,6 +225,7 @@ int DoIt( int argc, char * argv[], T )
     }
   else
     {
+    volTumor = 0.0;
     std::cerr << "Failed to detect Tumor." << std::endl;
     }
 
